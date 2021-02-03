@@ -25,7 +25,7 @@ import pandas as pd
 
 tf = 30 # fianl time
 
-m=GEKKO(remote=False)
+m=GEKKO(remote=True)
 m.time = np.linspace(0,tf-1,tf)
 
 K = m.FV(1) # Process Gain
